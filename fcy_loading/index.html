@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+
+    <style>
+      #cursor{position:fixed;z-index:9999999;transform:translate(-50%,-50%) rotate(-35deg);border-radius:50%; pointer-events:none; width: 2em; height: 2em; transition: transform 250ms;}
+    </style>
+    <img id="cursor" src="media/zaniq.png" draggable="false">
+
+
+    <input style="position: absolute; opacity: 0;" id="hiddenLink" type="text">
+
+    <div class="discord-container container">
+      <div id="discField" class="discord-field">
+        <fieldset id="discordLink">
+          <legend align="center">DISCORD</legend>
+          <input id="discordInput" type="text" value="discord.gg/Mn7UD5AP" disabled>
+        </fieldset>
+        <p>FusionCity - One step ahead of the Game<span id="copyCount"></span></p>
+      </div>
+    </div>
+
+    <video id="bgVideo" class="background" src="https://cdn.discordapp.com/attachments/800680702433689650/1057117441412579458/loadingscreen_bg.mp4" autoplay muted></video>
+    <div class="background"></div>
+
+    <div class="logo-container container">
+      <div id="rxLogo" class="logo-layers">
+        <img id="pureLogo" class="zaniq-logo" src="media/zaniq.png" draggable="false">
+        <img id="blurLogo" class="zaniq-logo blured" src="media/zaniq.png" draggable="false">
+        <h1  id="txtLogo" class="logo-title"></h1>
+      </div>
+    </div>
+
+    <!--audio id="bgMusic" src="https://anach.xyz/zaniq/datastore/music.mp3" autoplay></audio-->
+  </body>
+</html>
